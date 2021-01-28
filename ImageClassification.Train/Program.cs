@@ -43,7 +43,7 @@ namespace ImageClassification.Train
             SaveModel(outputMlNetModelFilePath, mlContext, trainDataView, trainedModel);
             CopyModelToPredict(outputMlNetModelFilePath, predictMlNetModelFilePath);
 
-            TrySinglePrediction(imagesFolderPathForPredictions, mlContext, trainedModel);
+            //TrySinglePrediction(imagesFolderPathForPredictions, mlContext, trainedModel);
 
             Console.WriteLine("Press any key to finish");
             Console.ReadKey();
@@ -148,31 +148,31 @@ namespace ImageClassification.Train
 
         private static string GetImagesForPredictionFolderPath()
         {
-            string assetsRelativePath = @"../../../assets";
+            string assetsRelativePath = @"..\..\..\assets";
             string assetsPath = GetAbsolutePath(assetsRelativePath);
             return Path.Combine(assetsPath, "inputs", "test-images");
         }
 
         private static string GetPredictModelFilePath()
         {
-            string solutionRelativePath = @"../../../../";
+            string solutionRelativePath = @"..\..\..\..\";
             string solutionPath = GetAbsolutePath(solutionRelativePath);
             return Path.Combine(solutionPath, "ImageClassification.Predict", "assets", "inputs", "MLNETModel", "imageClassifier.zip");
         }
 
         private static string GetOutputModelFilePath()
         {
-            string assetsRelativePath = @"../../../assets";
+            string assetsRelativePath = @"..\..\..\assets";
             string assetsPath = GetAbsolutePath(assetsRelativePath);
             return Path.Combine(assetsPath, "outputs", "imageClassifier.zip");
         }
 
         private static string GetFullImagesetFolderPath()
         {
-            string assetsRelativePath = @"../../../assets";
+            string assetsRelativePath = @"..\..\..\assets";
             string assetsPath = GetAbsolutePath(assetsRelativePath);
             string imagesDownloadFolderPath = Path.Combine(assetsPath, "inputs", "images");
-            string finalImagesFolderName = "photos";
+            string finalImagesFolderName = "rice_leaf_diseases";
             string fullImagesetFolderPath = Path.Combine(imagesDownloadFolderPath, finalImagesFolderName);
 
             return fullImagesetFolderPath;

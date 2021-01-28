@@ -19,28 +19,19 @@ namespace ImageClassification.Predict
             string imagesFolderPathForPredictions = GetImagesPath(assetsPath);
             string imageClassifierModelZipFilePath = GetClassifierModelPath(assetsPath);
 
-            string fetalPath = @"C:\Study\NAI - Image-Classification\Image-Classification\ImageClassification.Predict\assets\inputs\MLNETModel\FetalHealthClassificationModel.zip"
-
             try
             {
-                //var mlContext = new MLContext(seed: 1);
-                //Console.WriteLine($"Loading model from: {imageClassifierModelZipFilePath}");
-                //ITransformer loadedModel = GetLoadedModel(imageClassifierModelZipFilePath, mlContext);
-                //var predictionEngine = GetPredictionEngine(mlContext, loadedModel);
-                //var imagesToPredict = GetImagesToPredict(imagesFolderPathForPredictions);
-                //var imageToPredict = imagesToPredict.First();
-                //var prediction = GetFirstPrediction(predictionEngine, imageToPredict);
-                //DoSecondPrediction(predictionEngine, imageToPredict);
-                //DoubleCheckUsingIndex(predictionEngine, prediction);
-                //PrintInformationAboutPrediction(imageToPredict, prediction);
-                //PredictAllImages(predictionEngine, imagesToPredict);
-
                 var mlContext = new MLContext(seed: 1);
-                ITransformer loadedModel = GetLoadedModel(fetalPath, mlContext);
+                Console.WriteLine($"Loading model from: {imageClassifierModelZipFilePath}");
+                ITransformer loadedModel = GetLoadedModel(imageClassifierModelZipFilePath, mlContext);
                 var predictionEngine = GetPredictionEngine(mlContext, loadedModel);
-                
-
-
+                var imagesToPredict = GetImagesToPredict(imagesFolderPathForPredictions);
+                var imageToPredict = imagesToPredict.First();
+                var prediction = GetFirstPrediction(predictionEngine, imageToPredict);
+                DoSecondPrediction(predictionEngine, imageToPredict);
+                DoubleCheckUsingIndex(predictionEngine, prediction);
+                PrintInformationAboutPrediction(imageToPredict, prediction);
+                PredictAllImages(predictionEngine, imagesToPredict);
             }
             catch (Exception ex)
             {
