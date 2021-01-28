@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <Folder Include="assets\inputs\images\" />
+    <Folder Include="assets\inputs\test-images" />
   </ItemGroup>
 
   <ItemGroup>
