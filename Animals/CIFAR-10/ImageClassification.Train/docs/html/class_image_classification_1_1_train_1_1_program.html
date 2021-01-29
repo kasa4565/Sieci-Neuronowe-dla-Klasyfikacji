@@ -78,6 +78,7 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a4dfa5bad81ee6e2bcca7bc25ea030dd0"><td class="memItemLeft" align="right" valign="top">static IEnumerable&lt; ImageData &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image_classification_1_1_train_1_1_program.html#a4dfa5bad81ee6e2bcca7bc25ea030dd0">LoadImagesFromDirectory</a> (string folder, bool useFolderNameAsLabel=true)</td></tr>
+<tr class="memdesc:a4dfa5bad81ee6e2bcca7bc25ea030dd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try a single prediction simulating an end-user app.  <a href="class_image_classification_1_1_train_1_1_program.html#a4dfa5bad81ee6e2bcca7bc25ea030dd0">More...</a><br /></td></tr>
 <tr class="separator:a4dfa5bad81ee6e2bcca7bc25ea030dd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69adc601008619ba682c3455a458138d"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image_classification_1_1_train_1_1_program.html#a69adc601008619ba682c3455a458138d">GetAbsolutePath</a> (string relativePath)</td></tr>
 <tr class="separator:a69adc601008619ba682c3455a458138d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -92,11 +93,8 @@ Static Private Member Functions</h2></td></tr>
 <tr class="memitem:ae1be46c01721e9cc5e8221d662f2ff68"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image_classification_1_1_train_1_1_program.html#ae1be46c01721e9cc5e8221d662f2ff68">SpecifyContextFilter</a> ()</td></tr>
 <tr class="memdesc:ae1be46c01721e9cc5e8221d662f2ff68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specify MLContext Filter to only show feedback log/traces about <a class="el" href="namespace_image_classification.html">ImageClassification</a>  <a href="class_image_classification_1_1_train_1_1_program.html#ae1be46c01721e9cc5e8221d662f2ff68">More...</a><br /></td></tr>
 <tr class="separator:ae1be46c01721e9cc5e8221d662f2ff68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab32522ec255f361e54dc4e16c6013156"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image_classification_1_1_train_1_1_program.html#ab32522ec255f361e54dc4e16c6013156">CopyModelToPredict</a> (string outputMlNetModelFilePath, string predictMlNetModelFilePath)</td></tr>
-<tr class="memdesc:ab32522ec255f361e54dc4e16c6013156"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy model to predict.  <a href="class_image_classification_1_1_train_1_1_program.html#ab32522ec255f361e54dc4e16c6013156">More...</a><br /></td></tr>
-<tr class="separator:ab32522ec255f361e54dc4e16c6013156"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4f9258ebfe19920994cd8799e5e198a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image_classification_1_1_train_1_1_program.html#af4f9258ebfe19920994cd8799e5e198a">SaveModel</a> (string outputMlNetModelFilePath, MLContext <a class="el" href="class_image_classification_1_1_train_1_1_program.html#a2701052ff48dee5083e0bf52dbf0d625">mlContext</a>, IDataView trainDataView, ITransformer trainedModel)</td></tr>
-<tr class="memdesc:af4f9258ebfe19920994cd8799e5e198a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save the model to assets/outputs (You get ML.NET .zip model file and TensorFlow .pb model file).  <a href="class_image_classification_1_1_train_1_1_program.html#af4f9258ebfe19920994cd8799e5e198a">More...</a><br /></td></tr>
+<tr class="memdesc:af4f9258ebfe19920994cd8799e5e198a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy model to predict.  <a href="class_image_classification_1_1_train_1_1_program.html#af4f9258ebfe19920994cd8799e5e198a">More...</a><br /></td></tr>
 <tr class="separator:af4f9258ebfe19920994cd8799e5e198a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8bcff981500fe40d4da8eb5b2813c419"><td class="memItemLeft" align="right" valign="top">static ITransformer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image_classification_1_1_train_1_1_program.html#a8bcff981500fe40d4da8eb5b2813c419">GetTrainedModel</a> (IDataView trainDataView, Microsoft.ML.Data.EstimatorChain&lt; KeyToValueMappingTransformer &gt; pipeline)</td></tr>
 <tr class="memdesc:a8bcff981500fe40d4da8eb5b2813c419"><td class="mdescLeft">&#160;</td><td class="mdescRight">Train/create the ML model.  <a href="class_image_classification_1_1_train_1_1_program.html#a8bcff981500fe40d4da8eb5b2813c419">More...</a><br /></td></tr>
@@ -121,9 +119,6 @@ Static Private Member Functions</h2></td></tr>
 <tr class="memitem:af0558d893cfa3ec4f85dd7dde61cd682"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image_classification_1_1_train_1_1_program.html#af0558d893cfa3ec4f85dd7dde61cd682">EvaluateModel</a> (MLContext <a class="el" href="class_image_classification_1_1_train_1_1_program.html#a2701052ff48dee5083e0bf52dbf0d625">mlContext</a>, IDataView testDataset, ITransformer trainedModel)</td></tr>
 <tr class="memdesc:af0558d893cfa3ec4f85dd7dde61cd682"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the quality metrics (accuracy, etc.).  <a href="class_image_classification_1_1_train_1_1_program.html#af0558d893cfa3ec4f85dd7dde61cd682">More...</a><br /></td></tr>
 <tr class="separator:af0558d893cfa3ec4f85dd7dde61cd682"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a609a3e298dd2ec75631a0e300af53f56"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image_classification_1_1_train_1_1_program.html#a609a3e298dd2ec75631a0e300af53f56">TrySinglePrediction</a> (string imagesFolderPathForPredictions, MLContext <a class="el" href="class_image_classification_1_1_train_1_1_program.html#a2701052ff48dee5083e0bf52dbf0d625">mlContext</a>, ITransformer trainedModel)</td></tr>
-<tr class="memdesc:a609a3e298dd2ec75631a0e300af53f56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try a single prediction simulating an end-user app.  <a href="class_image_classification_1_1_train_1_1_program.html#a609a3e298dd2ec75631a0e300af53f56">More...</a><br /></td></tr>
-<tr class="separator:a609a3e298dd2ec75631a0e300af53f56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a029d2f0345223c1d3a26429d397a0945"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image_classification_1_1_train_1_1_program.html#a029d2f0345223c1d3a26429d397a0945">FilterMLContextLog</a> (object sender, LoggingEventArgs e)</td></tr>
 <tr class="separator:a029d2f0345223c1d3a26429d397a0945"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -178,51 +173,6 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab32522ec255f361e54dc4e16c6013156"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab32522ec255f361e54dc4e16c6013156">&#9670;&nbsp;</a></span>CopyModelToPredict()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void ImageClassification.Train.Program.CopyModelToPredict </td>
-          <td>(</td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>outputMlNetModelFilePath</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>predictMlNetModelFilePath</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Copy model to predict. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">outputMlNetModelFilePath</td><td></td></tr>
-    <tr><td class="paramname">predictMlNetModelFilePath</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -665,6 +615,16 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Try a single prediction simulating an end-user app. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">imagesFolderPathForPredictions</td><td></td></tr>
+    <tr><td class="paramname">mlContext</td><td></td></tr>
+    <tr><td class="paramname">trainedModel</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a0a08b84180d274854a6a65e4ed3515e6"></a>
@@ -740,7 +700,15 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Save the model to assets/outputs (You get ML.NET .zip model file and TensorFlow .pb model file). </p>
+<p>Copy model to predict. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">outputMlNetModelFilePath</td><td></td></tr>
+    <tr><td class="paramname">predictMlNetModelFilePath</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Save the model to assets/outputs (You get ML.NET .zip model file and TensorFlow .pb model file).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">outputMlNetModelFilePath</td><td></td></tr>
@@ -780,58 +748,6 @@ Static Private Attributes</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">mlContext</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a609a3e298dd2ec75631a0e300af53f56"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a609a3e298dd2ec75631a0e300af53f56">&#9670;&nbsp;</a></span>TrySinglePrediction()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void ImageClassification.Train.Program.TrySinglePrediction </td>
-          <td>(</td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>imagesFolderPathForPredictions</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">MLContext&#160;</td>
-          <td class="paramname"><em>mlContext</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">ITransformer&#160;</td>
-          <td class="paramname"><em>trainedModel</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Try a single prediction simulating an end-user app. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">imagesFolderPathForPredictions</td><td></td></tr>
-    <tr><td class="paramname">mlContext</td><td></td></tr>
-    <tr><td class="paramname">trainedModel</td><td></td></tr>
   </table>
   </dd>
 </dl>
